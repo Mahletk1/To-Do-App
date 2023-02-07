@@ -5,8 +5,7 @@ import { Topbar } from "./Topbar/topbar";
 
 const App = () => {
     return (
-        <>
-        
+        <>  
         <Layout style={{ 'height': '600px' }}>
             <Topbar />
             <Layout 
