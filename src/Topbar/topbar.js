@@ -8,7 +8,7 @@ export class Topbar extends Component {
             position: "fixed",
             width: "100%",
             height: 70,
-            zIndex: 1,
+            // zIndex: 1,
           };
         return (
             <Header

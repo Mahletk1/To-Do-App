@@ -1,27 +1,30 @@
 import React from "react";
 import Layout from "antd/es/layout/layout";
 import { Content } from "antd/es/layout/layout";
+import { Header} from "antd/es/layout/layout";
+import Sider from "antd/es/layout/Sider";
+import { Footer } from "antd/es/layout/layout";
 import { Topbar } from "./Topbar/topbar";
 
 const App = () => {
     return (
         <>  
-        <Layout style={{ 'height': '600px' }}>
-            <Topbar />
-            <Layout 
-            className="isoContentMainLayout"
-            style={{
-                      'height': '500px'
-                    }}>
-                <Content
-                    style={{
+        <Layout>
+         <Topbar />
+            <Layout style={{height: window.innerHeight}}>
+                {/* <Sider style={{
                         // padding: '70px 0 0',
-                        width: "100%",
+                        // width: "100%",
                         // lexShrink: '0',
                         background: '#17181F',
                         // position: 'relative'
-                    }}>
-                </Content>
+                    }}>left sidebar</Sider> */}
+                    <Layout>
+                    <Content  style={{
+                        background: '#17181F',
+                    }}>main content</Content>
+                    </Layout>
+               
             </Layout>
         </Layout>
         </>
