@@ -2,12 +2,16 @@ import React,{Component} from "react";
 import Card from "antd/es/card/Card";
 import { ReadFilled,UserOutlined,ShoppingCartOutlined} from '@ant-design/icons';
 import {Avatar, Progress, Button, Space, Row, Col} from "antd";
+import { Content } from "antd/es/layout/layout";
 
 
 export class Collections extends Component {
     render() {
         
         return (
+            <Content  style={{
+                background: '#17181F',
+            }}>
         <div align="middle" style={{marginTop:'15%'}}>
             <Row gutter={[16, 16]} style={{width:'45%'}}>
                 <Col sm={24} xs={24}>
@@ -108,6 +112,7 @@ export class Collections extends Component {
                 </Col>
             </Row>
         </div>
+        </Content>
            
           );
     }
