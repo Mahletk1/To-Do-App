@@ -6,6 +6,7 @@ import Sider from "antd/es/layout/Sider";
 import { Footer } from "antd/es/layout/layout";
 import { Topbar } from "./Topbar/topbar";
 import { Collections } from "./Collections/collections";
+import { Tasks } from "./Tasks/tasks";
 
 const App = () => {
     return (
@@ -14,31 +15,11 @@ const App = () => {
                       'height':  window.innerHeight
                     }}>
         <Topbar />
-            <Layout>
-                {/* <Sider>left sidebar</Sider> */}
-                <Content  style={{
-                        background: '#17181F',
-                    }}><Collections /></Content>
+            <Layout>    
+                {/* <Collections /> */}
+                <Tasks />
             </Layout>
         </Layout>
-        {/* <Layout style={{ 'height': '600px' }}>
-            <Topbar />
-            <Layout 
-            className="isoContentMainLayout"
-            style={{
-                      'height': '500px'
-                    }}>
-                <Content
-                    style={{
-                        // padding: '70px 0 0',
-                        width: "100%",
-                        // lexShrink: '0',
-                        background: '#17181F',
-                        // position: 'relative'
-                    }}>
-                </Content>
-            </Layout>
-        </Layout> */}
         </>
         );
 }
