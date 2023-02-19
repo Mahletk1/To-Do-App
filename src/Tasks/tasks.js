@@ -13,7 +13,6 @@ export class Tasks extends Component {
    state={
     showTasks:false
    }
-
     render() {
         return (
             <>
